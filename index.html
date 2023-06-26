@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Personal Finance Tracker</h1>
+
+  <div class="t-form">
+    <h2>Add/Edit/Delete Transaction</h2>
+    <form id="transactionForm">
+      <input type="hidden" id="transactionIdInput">
+      <input type="text" id="descriptionInput" placeholder="Description" required>
+      <input type="text" id="amountInput" placeholder="Amount" required>
+      <select id="currencyInput">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+      </select>
+      <input type="submit" value="Add Transaction">
+      <input type="button" value="Cancel" id="c-btn">
+    </form>
+  </div>
+
+  <div id="transactionList">
+    <h2>Transaction History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Currency</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="transactionTableBody"></tbody>
+    </table>
+    <div class="total-balance" id="totalBalance"></div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

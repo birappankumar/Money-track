@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: aqua;
+}
+
+h1 {
+  text-align: center;
+}
+
+.t-form {
+  margin-bottom: 20px;
+}
+
+.t-form input[type="text"],
+.t-form select {
+  width: 200px;
+  padding: 5px;
+}
+
+.t-form input[type="submit"] {
+  padding: 5px 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.total-balance {
+  font-weight: bold;
+  margin-top: 10px;
+}
